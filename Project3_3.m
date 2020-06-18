@@ -26,11 +26,9 @@ Emax = max(abs(Efield));
 %phi_n_theo = 0*([0:1:1000]');
 phi_n_theo = 0;
 phi_p_theo = 0;
-phi_n_comp = phi_n;
-phi_p_comp = phi_p;
 
-epsilon_n = norm(phi_n_theo-phi_n_comp,'inf');
-epsilon_p = norm(phi_p_theo-phi_p_comp,'inf');
+epsilon_n = norm(phi_n_theo-phi_n,'inf');
+epsilon_p = norm(phi_p_theo-phi_p,'inf');
 %End third point second part
 
 %
@@ -41,9 +39,7 @@ epsilon_p = norm(phi_p_theo-phi_p_comp,'inf');
 %J_n_theo = 0*([0:1:1000]'); , indifferente se così o come sotto
 J_n_theo = 0;
 J_p_theo = 0;
-J_n_comp = Jn;
-J_p_comp = Jp;
 
-delta_n = norm(J_n_theo-J_n_comp,'inf');
-delta_p = norm(J_p_theo-J_p_comp,'inf');
+delta_n = norm(J_n_theo-Jn,'inf');
+delta_p = norm(J_p_theo-Jp,'inf');
 %End fourth point second part
